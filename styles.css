@@ -1,0 +1,61 @@
+body{
+    font-size: 40px;
+    color: white;
+}
+.banner{
+    height: 250px;
+    background-image: url('bannerPic.jpg')
+}
+
+.profile-pic{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    border-radius: 50%;
+}
+
+.profile-pic:hover{
+    height: 200px;
+    width: 200px;
+}
+
+
+.main-body{
+    background-image: url('./bannerPic.jpg');
+    height: 800px;
+}
+
+.info-container{
+    padding-top: 8rem;
+    width: 100%;
+    border: black 1px solid;
+    text-align: center;
+}
+
+.greeting{
+    
+    margin: 0 auto;
+    padding: 0 auto;
+border: black 1px solid;
+}
+
+.large{
+    font-size: 4rem;
+}
+
+.skills{
+    height: 300px;
+    width: 80%;
+    margin: 5rem auto;
+    
+    backdrop-filter: blur(4px);
+    background-color: rgba(12,30,45,0.8);
+}
+
+.test{
+    color: white;
+    font-size: 40px;
+}
