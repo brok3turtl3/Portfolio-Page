@@ -5,63 +5,78 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>About Me</title>
+        <script type="text/javascript" src="scripts.js"></script>
+        <script src="https://kit.fontawesome.com/2130ef678a.js" crossorigin="anonymous"></script>
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
 		<div class="banner">
-			<div>
-				<img src="./Homer.jpg" class="profile-pic" alt="profile picture" />
+			<div class="profile-pic">
+				<img src="./images/newpp-removebg-preview.png" alt="profile picture" />
 			</div>
+            <div class="banner-quote"><p class="medium blue quote">"It's never too late to be who you might have been."</p><p class=" author medium blue">
+
+                George Elliot</p></div>
 		</div>
 		<div class="main-body">
 			<div class="info-container">
-				<p class="greeting large">
-					Hi, my name is Sean and I'm a web developper.
-				</p>
-				<div class="bio medium">This is where my intro and bio will go...</div>
-				<div class="skills">
-					<p class="medium">My Skills</p>
-					<div class="flex-container mt1">
+				
+				<div class="bio medium">
+                    <div class="story" style="--delay: .2s;">
+                    <span class="greeting large gray">
+                        Hi, my name is Sean and I'm a web developper.
+                    </span>
+                </div>
+                    <div class="story" style="--delay: 1.2s;">
+                    <span class="gray">This is where my intro and bio will go... For now its enough you know that I am awesome. I will save your business and make you a kabillionaire. I will be the best hire you ever make. Whats the hold up!?!?</span></div></div>
+                    <div class="skills-container">
+				<div class="skills animated-box">
+					<p class="large title">Things I know...</p>
+					<div class="flex-container medium mt1">
 						<div class="pad1">
-							<img height="50px" src="./images/html.png" alt="" />
+							<img height="75px" src="./images/html.png" alt="" />
 							<p>HTML</p>
 						</div>
 						<div
                         class="pad1">
-							<img height="50px" src="./images/css3.png" alt="" />
+							<img height="75px" src="./images/css3.png" alt="" />
 							<p>CSS</p>
 						</div>
 						<div class="pad1">
-							<img height="50px" src="./images/java-script.png" alt="" />
+							<img height="75px" src="./images/java-script.png" alt="" />
 							<p>Javascript</p>
 						</div>
 						<div class="pad1">
-							<img height="50px" src="./images/react.png" alt="" />
+							<img height="75px" src="./images/react.png" alt="" />
 							<p>React</p>
 						</div>
 						<div class="pad1">
-							<img height="50px" src="./images/redux.png" alt="" />
+							<img height="75px" src="./images/redux.png" alt="" />
 							<p>Redux</p>
 						</div>
 						<div class="pad1">
-							<img height="50px" src="./images/mongodb.png" alt="" />
+							<img height="75px" src="./images/mongodb.png" alt="" />
 							<p>MongoDB</p>
 						</div>
 						<div class="pad1">
-							<img height="50px" src="./images/node-js.png" alt="" />
+							<img height="75px" src="./images/node-js.png" alt="" />
 							<p>NodeJS</p>
 						</div>
 
-						<div class="pad1">
-							<img height="50px" src="./react.png" alt="" />
-							<p>React</p>
-						</div>
+						
 					</div>
 				</div>
-				<div class="built">
-					<p class="medium">Things I have built</p>
-					<div class="flex-container">
-						<a href="#"><div>Portfolio</div></a>
+                </div></div>
+                <div class="built-container">
+				<div class="built animated-box-1">
+					<p class="large title">Things I have built...</p>
+					<div class="flex-container medium mt1">
+						<a href="#"><div class="medium">Portfolio</div></a>
 						<a href="http://ourfamilymatters.ca" target="_blank"
 							><div>Family Matters</div></a
 						>
@@ -73,9 +88,12 @@
 						>
 					</div>
 				</div>
+                </div>
 			</div>
 			<footer>
-				<div class="copywrite"><p class="normal">&copy 2022 Sean Kelly</p></div>
+				<div class="copywrite gray medium"><p class="medium gray">&copy 2022 Sean Kelly</p></div>
+                <a href="mailto:brok3turtl3@gmail.com">
+                <div class="contact gray medium"><i class="fa-regular fa-envelope gray medium"></i>Contact Me</div></a>
 			</footer>
 		</div>
 	</body>
