@@ -1,8 +1,6 @@
 html{
-    font-size: 18px;
+    font-size: 12px;
 }
-
-
 
 *{
     margin: 0;
@@ -121,7 +119,7 @@ a {
 
 
 .main-body{
-    
+   padding-top: 2rem; 
     
 }
 
@@ -229,4 +227,83 @@ footer{
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+
+    html{
+        font-size: 10px;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 200px;
+        backdrop-filter: blur(4px);
+        /* background-color: rgba(12,30,45,0.8); */
+        background-image: linear-gradient(to right, rgba(12,30,45,0) , rgba(12,30,45,0.8));
+        /* background-image: url('./images/bannerPic.jpg') */
+    }
+
+    .profile-pic{
+        height: 200px;
+        width: 200px;
+        background-color: rgba(12,30,45,0.5);
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .profile-pic img{
+        height: 200px;
+        
+    
+    }
+}
+@media screen and (max-width: 769px) {
+
+    .profile-pic{
+        height: 175px;
+        width: 175px;
+        background-color: rgba(12,30,45,0.5);
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .profile-pic img{
+        height: 175px;
+        
+    
+    }
+
+}
+@media screen and (max-width: 480px) {
+
+    html{
+        font-size: 8px;
+    }
+
+
+    .profile-pic{
+        height: 150px;
+        width: 150px;
+        background-color: rgba(12,30,45,0.5);
+        position: absolute;
+        top: 100px;
+        left: 25px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .profile-pic img{
+        height: 150px;
+        
+    
+    }
 }
