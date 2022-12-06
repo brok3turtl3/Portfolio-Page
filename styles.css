@@ -100,7 +100,8 @@ a {
 }
 
 .banner-quote{
-    border: black 1px solid;
+    padding-right: 2rem;
+    max-width: 600px;
     width: 50%;
     align-self: center;
     
@@ -211,7 +212,7 @@ a {
  }
 
  .title{
-    border: black 1px solid;
+    
     margin: 0 auto;
  }
 
