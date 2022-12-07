@@ -1,6 +1,8 @@
-html {
+:root{
 	font-size: 12px;
 }
+
+
 
 * {
 	margin: 0;
@@ -14,6 +16,13 @@ body {
 	background-color: rgba(12, 30, 45, 0.9);
 	color: white;
 }
+
+ul{
+	text-align: start;
+	list-style: none;
+}
+
+
 
 hr{
     width: 60%;
@@ -29,7 +38,7 @@ hr{
 	font-size: 0.75rem;
 }
 .normal {
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 .medium {
 	font-size: 2rem;
@@ -46,17 +55,17 @@ hr{
 	margin-top: 2rem;
 }
 
-.pad1 {
-	padding: 1rem 1rem;
-}
-
 
 a {
 	text-decoration: none;
 	position: relative;
 }
 
-a::before {
+a:hover{
+	color: yellow;
+}
+
+/* a::before {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -75,7 +84,7 @@ a:hover::before {
     
 	transform-origin: left;
 	transform: scaleX(1);
-}
+} */
 
 
 
@@ -182,8 +191,34 @@ a:hover::before {
    height: 75px;
 }
 
+.project-container{
+	min-width: 250px;
+	min-height: 100px;
+	border: 1px solid darkslategray;
+	background-color: rgba(47, 79, 79, 0.2);
+	padding: 1rem;
+	display: flex;
+	margin: 1rem;
+	flex-direction: column;
+}
+.project-container:hover{
+	border: 1px solid yellow;
+	background-color: rgba(47, 79, 79, 0.5);
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+.project{
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
 .project-img{
     height: 75px;
+}
+.project-features{
+	margin-left: 1rem;
+	
 }
 
 .animated-box-effect {
@@ -207,15 +242,34 @@ a:hover::before {
 	);
 }
 
-.findme-container{
-    padding: 2rem;
-}
-
 .built {
 	padding: 1rem 0;
 	width: 80%;
 	margin: 2rem auto;
 	text-align: center;
+}
+
+.project{
+	display: ;
+}
+
+
+.socials-container{
+    padding: 2rem;
+}
+.socials {
+	padding: 3rem 0;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.social{
+    margin: 0 1rem;
+}
+
+.social-img{
+   height: 75px;
 }
 
 .title {
@@ -243,6 +297,11 @@ footer {
 	);
 }
 
+.cm:hover{
+	color: yellow;
+	background-color: yellow;
+}
+
 .image-spin{
     transition: transform .7s ease-in-out;
 }
@@ -253,7 +312,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
 	html {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.banner {
@@ -287,6 +346,10 @@ footer {
 	}
 }
 @media screen and (max-width: 769px) {
+
+    html{
+        font-size: 10px;
+    }
 	.profile-pic {
 		height: 175px;
 		width: 175px;
@@ -308,6 +371,9 @@ height: 50px;
     .project-img{
         height: 50px;
     }
+    .social-img{
+        height: 50px;
+    }
 }
 @media screen and (max-width: 480px) {
 	html {
@@ -323,6 +389,12 @@ height: 50px;
 		left: 25px;
 		border-radius: 50%;
 		overflow: hidden;
+	}
+
+	.story{
+					width: 80%;
+			margin: 0 auto;
+		
 	}
 
 	.profile-pic img {
