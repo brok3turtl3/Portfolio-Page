@@ -1,8 +1,6 @@
-:root{
+:root {
 	font-size: 12px;
 }
-
-
 
 * {
 	margin: 0;
@@ -17,22 +15,19 @@ body {
 	color: white;
 }
 
-ul{
+ul {
 	text-align: start;
 	list-style: none;
 }
 
-
-
-hr{
-    width: 60%;
-    margin: 0 auto;
+hr {
+	width: 60%;
+	margin: 0 auto;
 }
 
 .blue {
 	color: lightskyblue;
 }
-
 
 .small {
 	font-size: 0.75rem;
@@ -55,13 +50,12 @@ hr{
 	margin-top: 2rem;
 }
 
-
 a {
 	text-decoration: none;
 	position: relative;
 }
 
-a:hover{
+a:hover {
 	color: yellow;
 }
 
@@ -86,8 +80,6 @@ a:hover::before {
 	transform: scaleX(1);
 } */
 
-
-
 .banner {
 	display: flex;
 	flex-direction: row;
@@ -99,22 +91,21 @@ a:hover::before {
 		rgba(12, 30, 45, 0),
 		rgba(12, 30, 45, 0.8)
 	);
-	
 }
 
 .profile-pic {
-	height: 300px;
-	width: 300px;
+	height: 250px;
+	width: 250px;
 	background-color: rgba(12, 30, 45, 0.5);
 	position: absolute;
-	top: 100px;
+	top: 150px;
 	left: 100px;
 	border-radius: 50%;
 	overflow: hidden;
 }
 
 .profile-pic img {
-	height: 300px;
+	height: 250px;
 }
 
 .banner-quote {
@@ -140,7 +131,7 @@ a:hover::before {
 
 .info-container {
 	padding-top: 10rem;
-    padding-bottom: 5rem;
+	padding-bottom: 5rem;
 	width: 100%;
 	text-align: center;
 }
@@ -183,15 +174,15 @@ a:hover::before {
 	text-align: center;
 }
 
-.skill{
-    margin: 0 1rem;
+.skill {
+	margin: 0 1rem;
 }
 
-.skill-img{
-   height: 75px;
+.skill-img {
+	height: 75px;
 }
 
-.project-container{
+.project-container {
 	min-width: 250px;
 	min-height: 100px;
 	border: 1px solid darkslategray;
@@ -201,24 +192,23 @@ a:hover::before {
 	margin: 1rem;
 	flex-direction: column;
 }
-.project-container:hover{
+.project-container:hover {
 	border: 1px solid yellow;
 	background-color: rgba(47, 79, 79, 0.5);
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
 }
-.project{
+.project {
 	display: flex;
 	align-items: center;
 	margin-bottom: 1rem;
 }
-.project-img{
-    height: 75px;
+.project-img {
+	height: 75px;
 }
-.project-features{
+.project-features {
 	margin-left: 1rem;
-	
 }
 
 .animated-box-effect {
@@ -233,7 +223,7 @@ a:hover::before {
 
 .resume-container {
 	width: 100%;
-    padding: 2rem;
+	padding: 2rem;
 	background-image: linear-gradient(
 		to right,
 		rgba(12, 30, 45, 0),
@@ -249,13 +239,12 @@ a:hover::before {
 	text-align: center;
 }
 
-.project{
+.project {
 	display: ;
 }
 
-
-.socials-container{
-    padding: 2rem;
+.socials-container {
+	padding: 2rem;
 }
 .socials {
 	padding: 3rem 0;
@@ -264,12 +253,12 @@ a:hover::before {
 	text-align: center;
 }
 
-.social{
-    margin: 0 1rem;
+.social {
+	margin: 0 1rem;
 }
 
-.social-img{
-   height: 75px;
+.social-img {
+	height: 75px;
 }
 
 .title {
@@ -287,32 +276,31 @@ footer {
 	margin-top: 2rem;
 	height: 8rem;
 	display: flex;
-    align-items: center;
+	align-items: center;
 	justify-content: space-between;
-    backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
 	background-image: linear-gradient(
-		to right,rgba(12, 30, 45, 0.8),
+		to right,
+		rgba(12, 30, 45, 0.8),
 		rgba(12, 30, 45, 0)
-		
 	);
 }
 
-.cm:hover{
+.cm:hover {
 	color: yellow;
-	
 }
 
-.image-spin{
-    transition: transform .7s ease-in-out;
+.image-spin {
+	transition: transform 0.7s ease-in-out;
 }
 
-.image-spin:hover{
-    transform: rotate(360deg);
+.image-spin:hover {
+	transform: rotate(360deg);
 }
 
 @media screen and (max-width: 1024px) {
-	html {
-		font-size: 12px;
+	:root {
+		font-size: 10px;
 	}
 
 	.banner {
@@ -344,12 +332,20 @@ footer {
 	.profile-pic img {
 		height: 200px;
 	}
+	.skill-img {
+		height: 60px;
+	}
+	.project-img {
+		height: 60px;
+	}
+	.social-img {
+		height: 60px;
+	}
 }
 @media screen and (max-width: 769px) {
-
-    html{
-        font-size: 10px;
-    }
+	:root {
+		font-size: 9px;
+	}
 	.profile-pic {
 		height: 175px;
 		width: 175px;
@@ -365,19 +361,19 @@ footer {
 		height: 175px;
 	}
 
-    .skill-img{
-height: 50px;
-    }
-    .project-img{
-        height: 50px;
-    }
-    .social-img{
-        height: 50px;
-    }
+	.skill-img {
+		height: 50px;
+	}
+	.project-img {
+		height: 50px;
+	}
+	.social-img {
+		height: 50px;
+	}
 }
 @media screen and (max-width: 480px) {
-	html {
-		font-size: 8px;
+	root {
+		font-size: 7px;
 	}
 
 	.profile-pic {
@@ -391,14 +387,22 @@ height: 50px;
 		overflow: hidden;
 	}
 
-	.story{
-					width: 80%;
-			margin: 0 auto;
-		
+	.story {
+		width: 80%;
+		margin: 0 auto;
 	}
 
 	.profile-pic img {
 		height: 150px;
+	}
+	.skill-img {
+		height: 40px;
+	}
+	.project-img {
+		height: 50px;
+	}
+	.social-img {
+		height: 40px;
 	}
 
 	.project {
